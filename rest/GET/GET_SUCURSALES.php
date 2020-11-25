@@ -1,5 +1,5 @@
 <?php
-	include_once '/var/www/httpdocs/rest/SQLGlobal.php';
+	include_once dirname( __DIR__ ) . '/SQLGLOBAL.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
