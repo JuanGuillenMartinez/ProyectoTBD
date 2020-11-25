@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 	include_once '/var/www/httpdocs/rest/SQLGlobal.php';
+=======
+	require '/rest/SQLGlobal.php';
+>>>>>>> d4e20cb0e08ddca92069422f73ffcd3f3aaf0a7a
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
