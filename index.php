@@ -4,6 +4,7 @@
  </head>
  <body>
  <?php
- header("HTTP/1.1 400 BAD REQUEST");?>
+ header("HTTP/1.1 400 BAD REQUEST");
+ echo 'hola mundo'?>
  </body>
 </html>
