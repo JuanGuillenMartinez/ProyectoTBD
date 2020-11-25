@@ -1,5 +1,5 @@
 <?php
-	include_once "/var/www/httpdocs/SQLGLOBAL.php";
+	require 'SQLGLOBAL.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
