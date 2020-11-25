@@ -1,11 +1,12 @@
 <?php
-	require 'SQLGLOBAL.php';
+	require 'SQLGlobal.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
-			$respuesta = SQLGlobal::selectArray("SELECT * FROM sucursales");
+			$respuesta = SQLGlobal::selectArray('SELECT * FROM sucursales'
+		);
 			echo json_encode(array(
-				'header'=>'200',
+				'respuesta'=>'200',
 				'estado' => 'Se obtuvieron los datos correctamente',
 				'data'=>$respuesta,
 				'error'=>''
@@ -19,8 +20,6 @@
 					'error'=>$e->getMessage())
 			);
 		}
-	} else {
-        header("HTTP/1.1 400 BAD REQUEST");
-    }
+	}
 
 ?>
