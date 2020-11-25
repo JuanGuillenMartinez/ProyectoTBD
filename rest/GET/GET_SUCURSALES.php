@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 	include_once dirname( __DIR__ ) . 'rest/SQLGLOBAL.php';
+=======
+	include_once dirname( __DIR__ ) . '/rest/SQLGLOBAL.php';
+>>>>>>> 57d407799fa13c6716985ed07eca531662496302
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
