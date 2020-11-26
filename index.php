@@ -5,6 +5,6 @@
  <body>
  <?php
  header("HTTP/1.1 400 BAD REQUEST");
- echo dirname( __DIR__ ),'/rest/SQLGLOBAL.php';?>
+ echo dirname( __DIR__ );?>
  </body>
 </html>
