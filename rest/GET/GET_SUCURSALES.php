@@ -1,5 +1,6 @@
 <?php
-	require 'SQLGLOBAL.php';
+	include_once dirname( __DIR__ ) . 'rest/SQLGLOBAL.php';
+
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
 			$respuesta = SQLGlobal::selectArray('SELECT * FROM sucursales'
