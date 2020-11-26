@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 	require '/invment.herokuapp.com/rest/SQLGlobal.php';
+=======
+	require 'https://invment.herokuapp.com/rest/SQLGlobal.php';
+>>>>>>> b238574fffd272ca710966af5d2ddd3d86d3077d
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
