@@ -1,5 +1,5 @@
 <?php
-	include_once dirname( __DIR__ ) . 'rest/SQLGLOBAL.php';
+	require 'SQLGlobal.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
