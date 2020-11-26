@@ -1,5 +1,5 @@
 <?php
-	require 'SQLGlobal.php';
+	require '/app/rest/SQLGlobal.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
@@ -11,7 +11,6 @@
 				'data'=>$respuesta,
 				'error'=>''
 			));
-			echo __FILE__;
 		}catch(PDOException $e){
 			echo json_encode(
 				array(
