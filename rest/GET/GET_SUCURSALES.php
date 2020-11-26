@@ -1,5 +1,5 @@
 <?php
-	require '/rest/GET/SQLGlobal.php';
+	require '/invment.herokuapp.com/rest/SQLGlobal.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
