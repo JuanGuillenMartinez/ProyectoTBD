@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
-	require '/invment.herokuapp.com/rest/SQLGlobal.php';
-=======
-	require 'https://invment.herokuapp.com/rest/SQLGlobal.php';
->>>>>>> b238574fffd272ca710966af5d2ddd3d86d3077d
+	require 'SQLGlobal.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
@@ -15,6 +11,7 @@
 				'data'=>$respuesta,
 				'error'=>''
 			));
+			echo __FILE__;
 		}catch(PDOException $e){
 			echo json_encode(
 				array(
