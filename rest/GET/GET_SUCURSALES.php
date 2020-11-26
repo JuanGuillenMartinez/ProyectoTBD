@@ -1,5 +1,5 @@
 <?php
-	require 'SQLGlobal.php';
+	require '/rest/GET/SQLGlobal.php';
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
